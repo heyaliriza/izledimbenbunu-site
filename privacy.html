@@ -6,11 +6,12 @@
   <title>Gizlilik politikası – İzledim Ben Bunu</title>
   <meta name="description" content="İzledim Ben Bunu uygulamasının gizlilik politikası">
   <link rel="alternate" hreflang="en" href="en/privacy.html">
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="site"><nav>
-  <a class="brand" href="index.html">İzledim Ben Bunu</a>
+  <a class="brand" href="index.html"><img src="logo.svg" alt="" width="32" height="32">İzledim Ben Bunu</a>
   <a href="privacy.html">Gizlilik politikası</a>
   <a href="terms.html">Kullanım koşulları</a>
   <a href="delete-account.html">Hesap silme</a>
@@ -33,6 +34,9 @@
     <tr><td>Kullanıcı adı</td><td>Hesabını ve yorumlarını diğer kullanıcılara gösterme</td></tr>
     <tr><td>Şifre (yalnızca geri döndürülemez hash olarak)</td><td>Kimlik doğrulama. Şifren düz metin olarak saklanmaz.</td></tr>
     <tr><td>İzleme geçmişi, listeler, puanlar ve yorumlar</td><td>Uygulamanın temel işlevi</td></tr>
+    <tr><td>Bildirim anahtarı (isteğe bağlı)</td><td>Yeni bölüm bildirimi göndermek. Yalnızca <strong>Ayarlar → Yeni bölüm bildirimleri</strong>'ni açarsan cihazın bildirim anahtarı (Expo Push) ve dilin sunucuda saklanır; kapatınca, çıkış yapınca veya hesabını silince silinir. Bildirimler Expo ve Google (FCM) altyapısından geçer.</td></tr>
+    <tr><td>Profil fotoğrafı (isteğe bağlı)</td><td>Profilinde göstermek. Seçtiğin fotoğraf cihazında 256×256 boyuta küçültülür, sunucuya yüklenir ve profil gizliliğinden bağımsız olarak herkese görünür. Dilediğin zaman kaldırabilirsin; hesabını silince de silinir.</td></tr>
+    <tr><td>Profil biyografisi, kendi listelerin ve gizlilik ayarın</td><td>Profilini ve listelerini diğer kullanıcılara göstermek. Profilin <strong>açıkken</strong> kullanıcı adın aramada çıkar; izleme listen, yorumların ve herkese açık listelerin görülebilir. <strong>Gizli</strong> profilde bunları yalnızca sen görürsün (kullanıcı adın aramada görünür, içeriğin görünmez).</td></tr>
     <tr><td>Moderasyon kayıtları</td><td>Bir yorum kaldırıldığında veya hesap askıya alındığında alınan karar, gerekçe ve kaldırılan yorumun metni, itirazları değerlendirebilmek için kaydedilir. Hesabını sildiğinde bu kayıtlar da silinir.</td></tr>
     <tr><td>Şikayet ve engelleme kayıtları</td><td>Topluluğu güvende tutmak. Bir yorumu şikayet ettiğinde şikayet eden hesap, şikayet nedeni ve (yazdıysan) açıklaman kaydedilir; şikayet edilen kişiye şikayet edenin kim olduğu gösterilmez. Engellediğin kullanıcıların listesi de saklanır.</td></tr>
     <tr><td>Oturum bilgisi (yenileme anahtarı)</td><td>Her açılışta tekrar giriş yapmanı gerektirmemek. Cihazın güvenli depolama alanında (Android Keystore) saklanır.</td></tr>

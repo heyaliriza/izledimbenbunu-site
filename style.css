@@ -1,13 +1,15 @@
-:root { --bg:#fff; --text:#111827; --muted:#6b7280; --primary:#4f46e5; --surface:#f3f4f6; --border:#e5e7eb; }
+/* Marka renkleri: açık tema sarı + kırmızı + beyaz, koyu tema kırmızı + beyaz + siyah (uygulamayla aynı). */
+:root { --bg:#FFFBF0; --text:#1D1D1F; --muted:#6B5E3A; --primary:#D11F35; --surface:#FFF1C7; --border:#F0DDA6; }
 @media (prefers-color-scheme: dark) {
-  :root { --bg:#0b0f19; --text:#f3f4f6; --muted:#9ca3af; --primary:#818cf8; --surface:#161b27; --border:#2b3345; }
+  :root { --bg:#0B0B0C; --text:#FFFFFF; --muted:#A1A1A8; --primary:#FF4D5E; --surface:#161618; --border:#2C2C30; }
 }
 * { box-sizing: border-box; }
 body { margin:0; background:var(--bg); color:var(--text); font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
 main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
 header.site { border-bottom:1px solid var(--border); }
 header.site nav { max-width:720px; margin:0 auto; padding:14px 16px; display:flex; gap:20px; flex-wrap:wrap; align-items:center; }
-header.site .brand { font-weight:700; color:var(--text); text-decoration:none; margin-right:auto; }
+header.site .brand { font-weight:700; color:var(--text); text-decoration:none; margin-right:auto; display:inline-flex; align-items:center; gap:8px; }
+header.site .brand img { width:32px; height:32px; }
 a { color: var(--primary); }
 h1 { font-size: 2rem; line-height:1.2; margin: 0 0 8px; }
 h2 { font-size: 1.25rem; margin-top: 2rem; }
