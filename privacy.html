@@ -1,81 +1,14 @@
 <!doctype html>
 <html lang="tr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gizlilik politikası – İzledim Ben Bunu</title>
-  <meta name="description" content="İzledim Ben Bunu uygulamasının gizlilik politikası">
-  <link rel="alternate" hreflang="en" href="en/privacy.html">
-  <link rel="icon" href="logo.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>İzledim Ben Bunu</title>
+<meta http-equiv="refresh" content="0; url=https://izledimbenbunu.app/privacy.html">
+<link rel="canonical" href="https://izledimbenbunu.app/privacy.html">
+<meta name="robots" content="noindex">
 </head>
 <body>
-<header class="site"><nav>
-  <a class="brand" href="index.html"><img src="logo.svg" alt="" width="32" height="32">İzledim Ben Bunu</a>
-  <a href="privacy.html">Gizlilik politikası</a>
-  <a href="terms.html">Kullanım koşulları</a>
-  <a href="delete-account.html">Hesap silme</a>
-  <a href="en/privacy.html" hreflang="en" lang="en">English</a>
-</nav></header>
-<main>
-<h1>Gizlilik politikası</h1>
-<p class="lead">Son güncelleme: 6 Ekim 2026</p>
-
-<p>Bu politika, "İzledim Ben Bunu" mobil uygulamasının (“Uygulama”) hangi kişisel verileri topladığını, bunları neden kullandığını ve haklarını açıklar.</p>
-
-<h2>1. Veri sorumlusu</h2>
-<p><strong>Ali Rıza Uzunoğlu</strong> (geliştirici). İletişim: <strong>alirizahd@gmail.com</strong></p>
-
-<h2>2. Topladığımız veriler</h2>
-<table>
-  <thead><tr><th>Veri</th><th>Amaç</th></tr></thead>
-  <tbody>
-    <tr><td>E-posta adresi</td><td>Hesap oluşturma, giriş, e-posta doğrulama ve şifre sıfırlama. Doğrulama/sıfırlama kodları e-posta gönderim hizmetimiz (Resend) üzerinden iletilir; yalnızca e-posta adresin ve kod bu hizmete verilir.</td></tr>
-    <tr><td>Kullanıcı adı</td><td>Hesabını ve yorumlarını diğer kullanıcılara gösterme</td></tr>
-    <tr><td>Şifre (yalnızca geri döndürülemez hash olarak)</td><td>Kimlik doğrulama. Şifren düz metin olarak saklanmaz.</td></tr>
-    <tr><td>İzleme geçmişi, listeler, puanlar ve yorumlar</td><td>Uygulamanın temel işlevi</td></tr>
-    <tr><td>İki adımlı doğrulama sırrı ve yedek kodlar (isteğe bağlı)</td><td>Yalnızca iki adımlı doğrulamayı sen açarsan: doğrulayıcı uygulama sırrın şifreli (AES-256) saklanır, yedek kodlar yalnızca geri döndürülemez özet olarak tutulur. Kapatınca ya da hesabını silince silinir.</td></tr>
-    <tr><td>Bildirim anahtarı (isteğe bağlı)</td><td>Yeni bölüm bildirimi göndermek. Yalnızca <strong>Ayarlar → Yeni bölüm bildirimleri</strong>'ni açarsan cihazın bildirim anahtarı (Expo Push) ve dilin sunucuda saklanır; kapatınca, çıkış yapınca veya hesabını silince silinir. Bildirimler Expo ve Google (FCM) altyapısından geçer.</td></tr>
-    <tr><td>Profil fotoğrafı (isteğe bağlı)</td><td>Profilinde göstermek. Seçtiğin fotoğraf cihazında 256×256 boyuta küçültülür, sunucuya yüklenir ve profil gizliliğinden bağımsız olarak herkese görünür. Dilediğin zaman kaldırabilirsin; hesabını silince de silinir.</td></tr>
-    <tr><td>Profil biyografisi, kendi listelerin ve gizlilik ayarın</td><td>Profilini ve listelerini diğer kullanıcılara göstermek. Profilin <strong>açıkken</strong> kullanıcı adın aramada çıkar; izleme listen, yorumların ve herkese açık listelerin görülebilir. <strong>Gizli</strong> profilde bunları yalnızca sen görürsün (kullanıcı adın aramada görünür, içeriğin görünmez).</td></tr>
-    <tr><td>Moderasyon kayıtları</td><td>Bir yorum kaldırıldığında veya hesap askıya alındığında alınan karar, gerekçe ve kaldırılan yorumun metni, itirazları değerlendirebilmek için kaydedilir. Hesabını sildiğinde bu kayıtlar da silinir.</td></tr>
-    <tr><td>Şikayet ve engelleme kayıtları</td><td>Topluluğu güvende tutmak. Bir yorumu şikayet ettiğinde şikayet eden hesap, şikayet nedeni ve (yazdıysan) açıklaman kaydedilir; şikayet edilen kişiye şikayet edenin kim olduğu gösterilmez. Engellediğin kullanıcıların listesi de saklanır.</td></tr>
-    <tr><td>Oturum bilgisi (yenileme anahtarı)</td><td>Her açılışta tekrar giriş yapmanı gerektirmemek. Cihazın güvenli depolama alanında (Android Keystore) saklanır.</td></tr>
-    <tr><td>Dil tercihi</td><td>Yalnızca cihazında saklanır; uygulamayı seçtiğin dilde göstermek için kullanılır. Dil, başlık ve özetlerin o dilde gelmesi için isteklerle birlikte sunucuya da iletilir.</td></tr>
-  </tbody>
-</table>
-<p><strong>Misafir olarak</strong> hesap oluşturmadan dizi, film ve herkese açık içeriklere göz atabilirsin; bu durumda sunucuda sana ait hesap verisi tutulmaz. Reklam kimliği, konum, rehber, kamera, mikrofon gibi verileri <strong>toplamayız</strong>. Reklam göstermeyiz ve verilerini satmayız.</p>
-
-<h2>3. Verilerin kullanımı ve paylaşımı</h2>
-<ul>
-  <li>Verilerin yalnızca Uygulama'yı çalıştırmak için kullanılır.</li>
-  <li>Verilerini üçüncü taraflara satmayız veya pazarlama amacıyla paylaşmayız.</li>
-  <li>Yorumların ve kullanıcı adın, gizlilik ayarlarına bağlı olarak diğer kullanıcılar tarafından görülebilir. Spoiler olarak işaretlediğin yorumların metni, o yapımı izlemeyen kullanıcılara gönderilmez.</li>
-  <li>Dizi/film bilgileri TMDB'den alınır. Bu istekler sunucumuz üzerinden yapılır; kişisel verilerin TMDB ile paylaşılmaz.</li>
-  <li>Verilerin, Uygulama'nın altyapısını sağlayan hizmetlerde işlenir ve saklanır: <strong>Neon</strong> (veritabanı, Frankfurt/AB), <strong>Google Cloud Run</strong> (sunucu, Belçika/AB), <strong>Cloudflare</strong> (trafik koruması ve iletimi), <strong>Resend</strong> (doğrulama ve şifre sıfırlama e-postaları) ve isteğe bağlı bildirimler için <strong>Expo</strong> ile <strong>Google (FCM)</strong>. Bu hizmetler senin adına işlem yapan hizmet sağlayıcılarıdır; verilerini kendi amaçları için kullanmazlar. Bazı sağlayıcılar (ör. Cloudflare, Resend, Expo) verileri AB/Türkiye dışında işleyebilir; bu aktarım hizmetin sunulması için zorunludur ve KVKK kapsamındaki yurt dışı aktarım kurallarına tabidir.</li>
-</ul>
-
-<h2>4. Güvenlik</h2>
-<p>Bağlantılar şifreli (HTTPS) yapılır. Şifreler güçlü bir algoritmayla (argon2id) hash'lenerek saklanır. Oturum anahtarları cihazda şifreli depolanır.</p>
-
-<h2>5. Saklama süresi ve silme</h2>
-<p>Verilerini hesabın var olduğu sürece saklarız. Hesabını Uygulama içinden (<em>Ayarlar → Hesabımı sil</em>) ya da <a href="delete-account.html">hesap silme sayfasındaki</a> adımlarla silebilirsin. Silme işleminde hesabın ve ona bağlı tüm veriler (yorumlar, puanlar, listeler, izleme geçmişi, oturumlar) <strong>kalıcı olarak ve geri alınamaz şekilde</strong> kaldırılır. Otomatik veritabanı yedekleri, barındırma sağlayıcısının yedekleme döngüsüne göre en geç <strong>30 gün</strong> içinde tamamen silinir.</p>
-
-<h2>6. Hakların</h2>
-<p>6698 sayılı KVKK ve ilgili mevzuat kapsamında verilerine erişme, düzeltme, silme ve işlenmesine itiraz etme hakkına sahipsin. Taleplerini yukarıdaki e-posta adresine iletebilirsin.</p>
-
-<h2>7. Çocuklar</h2>
-<p>Uygulama 13 yaşın altındaki çocuklara yönelik değildir ve onlardan bilerek veri toplamayız.</p>
-
-<h2>8. Değişiklikler</h2>
-<p>Bu politika güncellenebilir. Önemli değişiklikler Uygulama içinde duyurulur. Güncel sürüm her zaman bu sayfadadır.</p>
-
-<h2>9. TMDB atfı</h2>
-<p>Bu uygulama TMDB ve TMDB API'lerini kullanır ancak TMDB tarafından onaylanmamış veya sertifikalandırılmamıştır.</p>
-</main>
-<footer><div>
-  Bu uygulama TMDB ve TMDB API'lerini kullanır ancak TMDB tarafından onaylanmamış veya sertifikalandırılmamıştır.
-  <br>© 2026 İzledim Ben Bunu
-</div></footer>
+<p>Bu sayfa taşındı / This page has moved: <a href="https://izledimbenbunu.app/privacy.html">https://izledimbenbunu.app/privacy.html</a></p>
 </body>
 </html>
