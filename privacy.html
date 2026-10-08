@@ -30,10 +30,11 @@
 <table>
   <thead><tr><th>Veri</th><th>Amaç</th></tr></thead>
   <tbody>
-    <tr><td>E-posta adresi</td><td>Hesap oluşturma, giriş ve hesapla ilgili iletişim</td></tr>
+    <tr><td>E-posta adresi</td><td>Hesap oluşturma, giriş, e-posta doğrulama ve şifre sıfırlama. Doğrulama/sıfırlama kodları e-posta gönderim hizmetimiz (Resend) üzerinden iletilir; yalnızca e-posta adresin ve kod bu hizmete verilir.</td></tr>
     <tr><td>Kullanıcı adı</td><td>Hesabını ve yorumlarını diğer kullanıcılara gösterme</td></tr>
     <tr><td>Şifre (yalnızca geri döndürülemez hash olarak)</td><td>Kimlik doğrulama. Şifren düz metin olarak saklanmaz.</td></tr>
     <tr><td>İzleme geçmişi, listeler, puanlar ve yorumlar</td><td>Uygulamanın temel işlevi</td></tr>
+    <tr><td>İki adımlı doğrulama sırrı ve yedek kodlar (isteğe bağlı)</td><td>Yalnızca iki adımlı doğrulamayı sen açarsan: doğrulayıcı uygulama sırrın şifreli (AES-256) saklanır, yedek kodlar yalnızca geri döndürülemez özet olarak tutulur. Kapatınca ya da hesabını silince silinir.</td></tr>
     <tr><td>Bildirim anahtarı (isteğe bağlı)</td><td>Yeni bölüm bildirimi göndermek. Yalnızca <strong>Ayarlar → Yeni bölüm bildirimleri</strong>'ni açarsan cihazın bildirim anahtarı (Expo Push) ve dilin sunucuda saklanır; kapatınca, çıkış yapınca veya hesabını silince silinir. Bildirimler Expo ve Google (FCM) altyapısından geçer.</td></tr>
     <tr><td>Profil fotoğrafı (isteğe bağlı)</td><td>Profilinde göstermek. Seçtiğin fotoğraf cihazında 256×256 boyuta küçültülür, sunucuya yüklenir ve profil gizliliğinden bağımsız olarak herkese görünür. Dilediğin zaman kaldırabilirsin; hesabını silince de silinir.</td></tr>
     <tr><td>Profil biyografisi, kendi listelerin ve gizlilik ayarın</td><td>Profilini ve listelerini diğer kullanıcılara göstermek. Profilin <strong>açıkken</strong> kullanıcı adın aramada çıkar; izleme listen, yorumların ve herkese açık listelerin görülebilir. <strong>Gizli</strong> profilde bunları yalnızca sen görürsün (kullanıcı adın aramada görünür, içeriğin görünmez).</td></tr>
@@ -43,7 +44,7 @@
     <tr><td>Dil tercihi</td><td>Yalnızca cihazında saklanır; uygulamayı seçtiğin dilde göstermek için kullanılır. Dil, başlık ve özetlerin o dilde gelmesi için isteklerle birlikte sunucuya da iletilir.</td></tr>
   </tbody>
 </table>
-<p>Reklam kimliği, konum, rehber, kamera, mikrofon gibi verileri <strong>toplamayız</strong>. Reklam göstermeyiz ve verilerini satmayız.</p>
+<p><strong>Misafir olarak</strong> hesap oluşturmadan dizi, film ve herkese açık içeriklere göz atabilirsin; bu durumda sunucuda sana ait hesap verisi tutulmaz. Reklam kimliği, konum, rehber, kamera, mikrofon gibi verileri <strong>toplamayız</strong>. Reklam göstermeyiz ve verilerini satmayız.</p>
 
 <h2>3. Verilerin kullanımı ve paylaşımı</h2>
 <ul>
@@ -51,7 +52,7 @@
   <li>Verilerini üçüncü taraflara satmayız veya pazarlama amacıyla paylaşmayız.</li>
   <li>Yorumların ve kullanıcı adın, gizlilik ayarlarına bağlı olarak diğer kullanıcılar tarafından görülebilir. Spoiler olarak işaretlediğin yorumların metni, o yapımı izlemeyen kullanıcılara gönderilmez.</li>
   <li>Dizi/film bilgileri TMDB'den alınır. Bu istekler sunucumuz üzerinden yapılır; kişisel verilerin TMDB ile paylaşılmaz.</li>
-  <li>Verilerin, Uygulama'nın sunucu altyapısını sağlayan barındırma hizmetinde saklanır: <strong>Henüz belirlenmedi</strong> (Uygulama yayınlanmadan önce bu bölüm güncellenecektir).</li>
+  <li>Verilerin, Uygulama'nın altyapısını sağlayan hizmetlerde işlenir ve saklanır: <strong>Neon</strong> (veritabanı, Frankfurt/AB), <strong>Google Cloud Run</strong> (sunucu, Belçika/AB), <strong>Cloudflare</strong> (trafik koruması ve iletimi), <strong>Resend</strong> (doğrulama ve şifre sıfırlama e-postaları) ve isteğe bağlı bildirimler için <strong>Expo</strong> ile <strong>Google (FCM)</strong>. Bu hizmetler senin adına işlem yapan hizmet sağlayıcılarıdır; verilerini kendi amaçları için kullanmazlar. Bazı sağlayıcılar (ör. Cloudflare, Resend, Expo) verileri AB/Türkiye dışında işleyebilir; bu aktarım hizmetin sunulması için zorunludur ve KVKK kapsamındaki yurt dışı aktarım kurallarına tabidir.</li>
 </ul>
 
 <h2>4. Güvenlik</h2>
